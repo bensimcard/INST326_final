@@ -1,30 +1,50 @@
-TASK MANAGER APP README
+# INST326 Task Manager
 
-    This is your task manager app! You will be given a menu of 9 choices.
-        1. Add task
-        2. Complete task
-        3. Show task
-        4. Show analytics
-        5. Export tasks to CSV
-        6. Save tasks to SQL database
-        7. Need help? Get Task Suggestion from Web
-        8. Scrape Tasks from Web Page
-        9. Exit
+A command-line Task Manager built in Python. It utilizes concepts from Modules 1–13 of INST326.
 
-    Depending on what you would like to do, select the number (1-9).
+## Usage
 
-    You will be able to add tasks, the due date, priority level, and the category of the task.
+1. **Running the application**
+   python task_manager.py
 
-    You can mark your task as complete by typing "2" and the name of the task
+2. **Follow the menu prompts (1–9):**
+   1-3. Add, complete, and view tasks (pending/completed/overdue)
+   4 Generate analytics (counts & percentages)
+   5 Export tasks to CSV
+   6 Persist tasks to SQLite database
+   7 Fetch a sample task from an API
+   8 Scrape tasks from any HTML list
+   9 Exit the program
 
-    You will be able to see all of the tasks you have, and whether they are pending, complete, or overdue.
+## Demo Scripts
 
-    You will be able to see the analytics of your tasks.
+- **Load from database:**
+  python load_tasks.py
 
-    You will have the option to export them to a CSV file, or an SQL database.
+  Displays all tasks currently stored in tasks.db.
 
-    You will be able to access task suggestions from the web.
+- **HTML scraping demo:**
+  1. Serve sample.html locally:
 
-    If you have a preexisting list, you will be able to use our web scraping option to get the tasks from that webpage.
+     python -m http.server 8000
 
-I hope this task manager app is helpful to you. Enjoy!
+  2. In the app, choose option 8 and enter:
+
+     http://localhost:8000/sample.html
+
+
+## Testing
+
+Run the unit tests to verify core functionality:
+
+python -m unittest test_task_manager.py
+
+## GitHub Repository
+
+View the full commit history and collaborate on GitHub:
+
+`https://github.com/bensimcard/INST326_final`
+
+---
+
+Prepared by: Ben Sim
