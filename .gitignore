@@ -1,0 +1,15 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environment & env
+venv/
+.env
+
+# Data files (generated DBs or CSVs)
+tasks.db
+tasks_export.csv
+
+# OS and editor metadata
+.DS_Store
+Thumbs.db
