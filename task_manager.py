@@ -112,7 +112,7 @@ class TaskManager:
                 due_date TEXT,
                 priority TEXT,
                 category TEXT,
-                completed INTEGER
+                completed INTEGER,
                 UNIQUE(title, due_date)
             )
         ''')
